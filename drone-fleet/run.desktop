@@ -1,0 +1,9 @@
+[Desktop Entry]
+version=1.0
+Name=run
+Comment=Run all drones
+Exec=python /home/cac_lab/Desktop/floating-room/drone-fleet/main.py
+Path=/home/cac_lab/Desktop/floating-room/drone-fleet
+Terminal=true
+Type=Application
+Categories=Utility;Application;

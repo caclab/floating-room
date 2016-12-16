@@ -1,0 +1,9 @@
+[Desktop Entry]
+version=1.0
+Name=drone_2
+Comment=Drone-2 Wifi Configure
+Exec=python /home/cac_lab/Desktop/floating-room/drone-fleet/wifi/scripts/drone_2.py
+Path=/home/cac_lab/Desktop/floating-room/drone-fleet/wifi/scripts
+Terminal=true
+Type=Application
+Categories=Utility;Application;
