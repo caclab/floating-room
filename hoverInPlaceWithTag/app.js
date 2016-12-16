@@ -19,17 +19,17 @@ var navdata_options = (
 // Connect and configure the drone
 mission.client().config('general:navdata_demo', true);
 mission.client().config('general:navdata_options', navdata_options);
-// mission.client().config('video:video_channel', 1);
-// mission.client().config('detect:detect_type', 12);
-// mission.client().config('control:flight_without_shell', false);
+mission.client().config('video:video_channel', 1);
+mission.client().config('detect:detect_type', 12);
+mission.client().config('control:flight_without_shell', false);
 //mission.client().config('control:outdoor_euler_angle_max', 0.15);
-// mission.client().config('control:altitude_max', 1500);
+mission.client().config('control:altitude_max', 1000);
 
 // mission.log("mission-" + df(new Date(), "yyyy-mm-dd_hh-MM-ss") + ".txt");
 
 mission.takeoff()
-       .go({x:0, y:0, z:1.0})
-       .hover(5000)
+       .go({x:0, y:0, z:1.2})
+       .hover(10000)
        .land();
 
 mission.run(function (err, result) {
